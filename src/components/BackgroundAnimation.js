@@ -14,13 +14,7 @@ function BackgroundAnimation() {
   return (
     <div className="backgroundBody">
       {backgroundInfo.map((info, index) => (
-        <div
-          className={`cube cubeAnimation${index}`}
-          style={{
-            animation: `cubeRotate${index} ${info.animationTime} linear infinite`,
-            transformOrigin: `0vw 0vw ${info.animationOrigin}`,
-          }}
-        >
+        <div className={`cube cubeAnimation${index}`}>
           {boxFaces.map((classId) => (
             <img
               className={`boxFace ${classId}`}

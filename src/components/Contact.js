@@ -33,7 +33,7 @@ function Contact() {
                 >
                   <div
                     className={`getInTouch ${
-                      inViewTwo ? 'showProject' : 'foldOutAnimation'
+                      inViewTwo ? '' : 'foldOutAnimation'
                     }`}
                   >
                     <p

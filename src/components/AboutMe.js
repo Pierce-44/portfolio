@@ -6,6 +6,14 @@ import '../styles/AboutMe.css';
 
 function AboutMe() {
   const [inView, setInView] = useState(false);
+  const boxFaces = [
+    'frontFaceAboutMe',
+    'rightFaceAboutMe',
+    'leftFaceAboutMe',
+    'topFaceAboutMe',
+    'bottomFaceAboutMe',
+    'backFaceAboutMe',
+  ];
 
   return (
     <Element name="scrollToAbout">
@@ -76,13 +84,21 @@ function AboutMe() {
                       </div>
                     </div>
 
-                    <img
-                      className={`avatarImage ${
+                    <div
+                      className={`aboutMeAvatarContainer ${
                         inView ? 'miniFoldInAvatar' : ''
                       }`}
-                      src="/images/Avatar.svg"
-                      alt="avatar"
-                    />
+                    >
+                      <div className="cubeAboutMe">
+                        {boxFaces.map((classId) => (
+                          <img
+                            className={`boxFaceAboutMe ${classId}`}
+                            src="https://firebasestorage.googleapis.com/v0/b/porfolio-ph.appspot.com/o/avatarBox.jpg?alt=media&token=f099e348-8e24-49a5-a445-3d2d24291efe"
+                            alt=""
+                          />
+                        ))}
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

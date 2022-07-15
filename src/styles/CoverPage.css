@@ -9,7 +9,7 @@ body {
 }
 
 .App {
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 p, h1 {
@@ -34,7 +34,7 @@ h2 {
 }
 
 .coverPageBody {
-  position: relative;
+  /* position: relative; */
   width: 100%;
   height: 100vh;
   display: flex;
@@ -48,16 +48,14 @@ h2 {
 }
 
 .nameContainer {
-  position: relative;
+  /* position: relative; */
   padding: 20px;
   margin-left: 20px;
   margin-right: 20px;
   max-width: 700px;
-  animation: largeRotate 0.75s ease-in-out;
+  animation: largeRotate 0.75s ease-in-out forwards;
   animation-delay: 0.6s;
-  animation-fill-mode: forwards;
-  transform-origin: 0 0 -200px;
-  opacity: 0;
+  opacity: 0%;
 }
 
 .nameDiv {
@@ -99,21 +97,24 @@ h2 {
 
 @keyframes largeRotate {
   0% {
-    transform: rotateX(90deg);
-
-  }
-  20% {
-    opacity: 0;
+    transform: rotateX(90deg) translateZ(200px);
+    opacity: 0%;
   }
   100% {
-    transform: rotateX(0deg);
+    transform: rotateX(0deg) translateZ(0px);
     opacity: 100%;
   }
 }
 
 @keyframes subMovement {
+  0% {
+    transform: translateY(0px);
+  }
   50% {
     transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }
 
@@ -162,20 +163,21 @@ h2 {
   .nameContainer {
     max-width: 500px;
   }
+  .headerBody {
+    height: 60px;
+  }
 }
 
 @media only screen and (max-width: 600px){
   .nameContainer {
     padding: 0;
+    max-width: 400px;
   } 
   .mainHeader {
     font-size: 30px;
   }
   .subHeader, .consoleLog {
     font-size: 14px;
-  }
-  .nameContainer {
-    max-width: 400px;
   }
   h2 {
     font-size: 20px;

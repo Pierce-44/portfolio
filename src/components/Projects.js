@@ -108,14 +108,23 @@ function ProjectInfo({
   ];
 
   return (
-    <InView onChange={setInViewTwo} threshold={0.7}>
+    <InView
+      onChange={setInViewTwo}
+      threshold={0.5}
+      className="projectContainerPerspective"
+    >
       <div
         className={`projectContainer ${orientation} ${
           inViewTwo ? 'showProject' : 'foldOutAnimation'
         }`}
       >
         <div className="phoneCurtain" />
-        <a href={projectLiveLink} target="_blank" rel="noreferrer">
+        <a
+          href={projectLiveLink}
+          target="_blank"
+          rel="noreferrer"
+          className="projectContainerPerspective"
+        >
           <div
             className={`videoContainer ${
               inViewTwo ? 'foldInProjectVideo' : ''
@@ -135,27 +144,15 @@ function ProjectInfo({
                 }`}
               />
             </div>
-            <video autoPlay muted loop className="projectVideo">
+            <video autoPlay muted loop playsInline className="projectVideo">
               <source src={videoUrl} />
             </video>
           </div>
         </a>
         <div className="projectInfoContainer">
-          <div>
-            <p
-              className={`featuredProject ${textAlign} ${
-                inViewTwo ? 'foldInMinProject' : ''
-              }`}
-            >
-              Featured Project
-            </p>
-            <h2
-              className={`projectTitle ${textAlign} ${
-                inViewTwo ? 'foldInMinProject' : ''
-              }`}
-            >
-              {projectName}
-            </h2>
+          <div className={`${inViewTwo ? 'foldInMinProject' : ''}`}>
+            <p className={`featuredProject ${textAlign}`}>Featured Project</p>
+            <h2 className={`projectTitle ${textAlign}`}>{projectName}</h2>
           </div>
           <p
             className={`highlightBox ${textAlign} ${
@@ -176,7 +173,12 @@ function ProjectInfo({
               inViewTwo ? 'foldInMinProject' : ''
             }`}
           >
-            <a href={projectGitHubLink} target="_blank" rel="noreferrer">
+            <a
+              href={projectGitHubLink}
+              target="_blank"
+              rel="noreferrer"
+              className="projectCubePerspective"
+            >
               <div className={`projectCubeTransfrom ${projectCubeOrientation}`}>
                 <div className="projectCube">
                   {boxFaces.map((classId) => (
@@ -229,12 +231,11 @@ function OtherProject({
   const [inView, setInView] = useState(false);
 
   return (
-    <InView onChange={setInView} threshold={1}>
+    <InView onChange={setInView} threshold={0.7} className="otherProjectBody">
       <div
-        className={`otherProjectContainer ${
-          inView ? 'foldInMinProject' : 'foldOutAnimation'
+        className={`otherProjectContainer otherProject${timeDelay} ${
+          inView ? 'foldInMinProject' : 'foldOutMinAnimation'
         }`}
-        style={{ animationDelay: timeDelay }}
       >
         <div className="otherProjectLinksContainer">
           <a href={projectLiveLink} target="_blank" rel="noreferrer">
@@ -255,8 +256,10 @@ function OtherProject({
           </a>
         </div>
         <div className="otherProjectInfoContainer">
-          <p className="foundationProject">{foundationProject}</p>
-          <h2 className="otherProjectTitle">{title}</h2>
+          <div>
+            <p className="foundationProject">{foundationProject}</p>
+            <h2 className="otherProjectTitle">{title}</h2>
+          </div>
           <p className="otherProjectText">{description}</p>
           <p className="otherProjectTechnology">{technology}</p>
         </div>
