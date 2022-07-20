@@ -20,10 +20,9 @@ A personal portfolio that was built with React, CSS, HTML, and FireBase. This po
 <br/>
 
 ## Features:
-- Sign up and log in with an email through FireBase authentication.
-- Carousel that can infinitely loop through movies and series in both direction without the need to return in the opposite direction when you get to the end of the carousel.
-- When hovering over a movie a pop-up is generated that autoplays the YouTube movie trailer as well as displays information related to the movie.
-- Playing a movie opens a separate full screen page that plays the movie (YouTube trailer)
+- CSS 3D transformations and animations to create a 3D cube environment that gives a style/theme to the webpage.
+- Implementation of react-intersection-observer, to monitor when elements are in view, allowing for animations and transformations to be triggered.
+- Implementation of react-scroll, gives the ability of an animated vertical scroll to specific selected elements.
 <br/>
 
 ## How To Use:
