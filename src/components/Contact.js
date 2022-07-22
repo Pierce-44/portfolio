@@ -55,10 +55,10 @@ function Contact() {
                         inViewTwo ? 'foldInMinProject' : ''
                       }`}
                     >
-                      Although I’m not currently looking for any new
-                      opportunities, my inbox is always open. Whether you have a
-                      question or just want to say hi, I’ll try my best to get
-                      back to you!
+                      I’m currently looking for front-end job opportunities with
+                      a focus on React and JavaScript, my inbox is always open.
+                      Whether you have a job opportunity, question or just want
+                      to say hi, I will get back to you as soon as possible!
                     </p>
                     <div
                       className={`contactButton ${

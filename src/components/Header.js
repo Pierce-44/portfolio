@@ -92,7 +92,7 @@ function Header() {
           </div>
           <a
             target="_blank"
-            href="https://firebasestorage.googleapis.com/v0/b/porfolio-ph.appspot.com/o/CVPH.pdf?alt=media&token=957bd9f5-824a-4442-92d1-54a9cd3e34b8"
+            href="https://firebasestorage.googleapis.com/v0/b/porfolio-ph.appspot.com/o/CV_22_07_22.pdf?alt=media&token=fc766c77-c3a5-4268-9516-6480e92c0424"
             rel="noreferrer"
           >
             {' '}
@@ -110,7 +110,7 @@ function Header() {
         <div className="sideBarIconsContainer">
           <a
             className="sideBarLink"
-            href="https://www.linkedin.com/"
+            href="https://www.linkedin.com/in/pierce-hahn/"
             target="_blank"
             rel="noreferrer"
           >
@@ -205,7 +205,7 @@ function Header() {
           </div>
           <a
             target="_blank"
-            href="https://firebasestorage.googleapis.com/v0/b/porfolio-ph.appspot.com/o/CVPH.pdf?alt=media&token=957bd9f5-824a-4442-92d1-54a9cd3e34b8"
+            href="https://firebasestorage.googleapis.com/v0/b/porfolio-ph.appspot.com/o/CV_22_07_22.pdf?alt=media&token=fc766c77-c3a5-4268-9516-6480e92c0424"
             rel="noreferrer"
           >
             {' '}
@@ -215,7 +215,7 @@ function Header() {
           </a>
           <div className="burgerSocials">
             <a
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/in/pierce-hahn/"
               target="_blank"
               rel="noreferrer"
             >

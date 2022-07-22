@@ -5,7 +5,7 @@ const mainProjectsInfo = [
     type: 'video/mp4',
     projectName: 'Netflix Clone',
     projectDescription:
-      'A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.',
+      'A Netflix clone app that was built with React, Javascript, CSS, and HTML, that utilises FireBase for authentication, and TMDB api to gather movie/series data.',
     projectTechnology: 'React Firebase WEBM-api',
     projectLiveLink: 'https://netflix-clone-model.web.app/',
     projectGitHubLink: 'https://github.com/Pierce-44/netflix-clone',
@@ -16,8 +16,8 @@ const mainProjectsInfo = [
     type: 'video/mp4',
     projectName: 'Shopping Cart',
     projectDescription:
-      'A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm,and more. Available on Visual Studio Marketplace, Package Control,Atom Package Manager, and npm.',
-    projectTechnology: 'React Firebase WEBMapi',
+      'A shopping cart app, which was developed using React, Javascript, CSS, and HTML. This app was developed to expand my understanding of React and React page routing options through the React Router Dom package.',
+    projectTechnology: 'React Javascript react-router',
     projectLiveLink: 'https://pierce-44.github.io/shopping-cart/',
     projectGitHubLink: 'https://github.com/Pierce-44/shopping-cart',
     orientation: 'projectReversed',
@@ -31,8 +31,8 @@ const mainProjectsInfo = [
     type: 'video/mp4',
     projectName: 'Where is Waldo',
     projectDescription:
-      'A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm,and more. Available on Visual Studio Marketplace, Package Control,Atom Package Manager, and npm.',
-    projectTechnology: 'React Firebase WEBMapi',
+      'A Where is Waldo app that operates like a photo tagging app, which was developed using React, Javascript, CSS, HTML, and FireBase (Cloud Firestore and hosting).',
+    projectTechnology: 'React Javascript Cloud-Firestore',
     projectLiveLink: 'https://where-is-waldo-game.web.app/',
     projectGitHubLink: 'https://github.com/Pierce-44/where-is-waldo',
   },
@@ -42,8 +42,8 @@ const mainProjectsInfo = [
     type: 'video/mp4',
     projectName: 'Chat App',
     projectDescription:
-      'A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm,and more. Available on Visual Studio Marketplace, Package Control,Atom Package Manager, and npm.',
-    projectTechnology: 'React Firebase WEBMapi',
+      'A chat app, which was developed using React, Javascript, CSS, HTML, and FireBase. This app was developed to expand my learning and understanding of Backend-as-a-Service (BaaS) and how FireBase can be used for this',
+    projectTechnology: 'React JS Firebase-Authentication',
     projectLiveLink: 'https://chat-app-d85d5.web.app/',
     projectGitHubLink: 'https://github.com/Pierce-44/chat-app',
     orientation: 'projectReversed',

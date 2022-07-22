@@ -14,7 +14,7 @@ function CoverPage() {
           <p className="">Hi, my name is</p>
           <h1 className="mainHeader">Pierce Hahn.</h1>
           <h2 className="subHeader">
-            I'm a self taught full-stack web developer with a background in
+            I'm a self taught Front-End Web Developer with a background in
             mechanical and automotive engineering.
           </h2>
         </div>

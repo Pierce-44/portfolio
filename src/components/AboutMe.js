@@ -38,15 +38,26 @@ function AboutMe() {
                   <div className="aboutMeTextImageContainer">
                     <div>
                       <p className="aboutMeText">
-                        Etiam sit amet mauris vel ipsum sodales vehicula non
-                        eget felis. Donec aliquet quam in hendrerit vestibulum.
-                        Praesent arcu ante, finibus sit amet mollis fringilla,
-                        ornare vitae magna. Maecenas vehicula nec ipsum at
-                        maximus. Praesent et erat commodo, malesuada augue sit
-                        amet, maximus neque. Sed id tortor non tortor dapibus
-                        auctor. Sed porta ex orci, et vulputate mi egestas in.
-                        Nullam lacinia dictum elementum. In fermentum diam sed
-                        dolor interdum, sed mattis massa efficitur.
+                        I am a passionate self-taught fort-end developer
+                        experienced in Javascript-based programming with a
+                        strong focus towards React based projects. I am working
+                        towards becoming a full stack web developer.
+                        Additionally, I have a technical background in
+                        Mechanical (BSc) and Automotive engineering (MSc).
+                        <br />
+                        <br />
+                        Currently I am studying and learning Next.js, TypeScript
+                        and MongoDB through the The Odin Project Full-Stack
+                        Javasctipt bootcamp. A few things about me, I can speak
+                        Portuguese at a higher intermediate level, and I am
+                        working towards becoming fully fluent in the language.
+                        Additionaly, in my free time I enjoy playing and
+                        learning about chess.
+                        <br />
+                        <br />
+                        All my projects are on GitHub, feel free to explore,
+                        have a look around, and get in touch. Below is a list of
+                        the current languages and tools that I use:
                       </p>
                       <div className="aboutMeTechnoListBody">
                         <div className="aboutMeTechnoList">
