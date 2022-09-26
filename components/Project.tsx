@@ -42,6 +42,7 @@ export default function Project({ projectInfo, index, inViewClick }: Props) {
               alt="monitors"
               width={400}
               height={200}
+              priority
             />
             <div className="absolute top-[10px] left-[75px] -z-10">
               <Image
@@ -49,6 +50,7 @@ export default function Project({ projectInfo, index, inViewClick }: Props) {
                 alt="instagram"
                 width={210}
                 height={125}
+                priority
               />
             </div>
             <div className="absolute bottom-[20px] left-[30px] -z-10">
@@ -57,6 +59,7 @@ export default function Project({ projectInfo, index, inViewClick }: Props) {
                 alt="instagram"
                 width={60}
                 height={82}
+                priority
               />
             </div>
             <div className="absolute bottom-[10px] right-[20px] -z-10">
@@ -65,6 +68,7 @@ export default function Project({ projectInfo, index, inViewClick }: Props) {
                 alt="instagram"
                 width={150}
                 height={95}
+                priority
               />
             </div>
             <div className="absolute bottom-[10px] left-[3px] -z-10">
@@ -73,6 +77,7 @@ export default function Project({ projectInfo, index, inViewClick }: Props) {
                 alt="instagram"
                 width={30}
                 height={65}
+                priority
               />
             </div>
           </div>
