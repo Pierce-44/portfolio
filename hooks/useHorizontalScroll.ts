@@ -9,9 +9,12 @@ export function useHorizontalScroll() {
     if (el) {
       const onWheel = (e: any) => {
         if (e.deltaY === 0) return;
+
+        const tune = e.deltaY > 0 ? 100 : -100;
+
         e.preventDefault();
         el.scrollTo({
-          left: el.scrollLeft + e.deltaY,
+          left: el.scrollLeft + e.deltaY + tune,
           behavior: 'smooth',
         });
       };
