@@ -24,7 +24,7 @@ export default function FrontPage() {
     <Element name="scrollToHome">
       <div ref={ref} className="h-[calc(100vh-56px)] min-h-[500px] w-full">
         <div className="h-full w-full flex flex-col items-center justify-center relative">
-          <div className="animate-ping-second absolute h-[400px] w-[400px] border rounded-full border-[#8585852c] top-[calc(1/2-200px] left-[calc(1/2-200px)] "></div>
+          <div className="animate-ping-second absolute h-[250px] w-[250px] sm:h-[400px] sm:w-[400px] border rounded-full border-[#8585852c] top-[calc(1/2-200px] left-[calc(1/2-200px)] "></div>
           <div className="relative mt-[50px]">
             <div className="animate-ping-first absolute top-0 left-0 h-[90px] z-0 w-[90px] bg-gradient-to-r from-[#58a6ff] to-[#c258ff] rounded-full blur-sm"></div>
             <div className="h-[90px] relative z-10 w-[90px] flex items-center justify-center rounded-full bg-[#202733]">
@@ -38,10 +38,10 @@ export default function FrontPage() {
               />
             </div>
           </div>
-          <p className="tracking-[6px] pt-4 text-[#a3a3a3]">
+          <p className="text-xs sm:text-base tracking-[6px] pt-4 text-[#a3a3a3]">
             FRONT END DEVELOPER
           </p>
-          <div className="text-3xl font-semibold tracking-wide pt-2">
+          <div className="text-md sm:text-3xl font-semibold tracking-wide pt-2">
             <span>{text}</span>
             <Cursor cursorColor="#58a6ff" />
           </div>

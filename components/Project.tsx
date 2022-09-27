@@ -35,7 +35,7 @@ export default function Project({ projectInfo, index, inViewClick }: Props) {
           <div
             className={`${
               projectInView ? '' : 'opacity-0 translate-x-[100px]'
-            } transition duration-[500ms]  mx-auto w-[400px] relative z-0`}
+            } transition duration-[500ms]  mx-auto w-[300px] sm:w-[400px] relative z-0`}
           >
             <Image
               src={projectInfo.projectImages[0]}
@@ -44,7 +44,7 @@ export default function Project({ projectInfo, index, inViewClick }: Props) {
               height={200}
               priority
             />
-            <div className="absolute top-[10px] left-[75px] -z-10">
+            <div className="h-[calc(125px*0.75)] w-[calc(210px*0.75)] sm:h-[125px] sm:w-[210px] absolute top-[10px] left-[55px] sm:left-[75px] -z-10">
               <Image
                 src={projectInfo.projectImages[1]}
                 alt="instagram"
@@ -53,7 +53,7 @@ export default function Project({ projectInfo, index, inViewClick }: Props) {
                 priority
               />
             </div>
-            <div className="absolute bottom-[20px] left-[30px] -z-10">
+            <div className="h-[calc(82px*0.75)] w-[calc(60px*0.75)] sm:h-[82px] sm:w-[60px]  absolute sm:bottom-[26px] bottom-[25px] left-[23px] sm:left-[30px] -z-10">
               <Image
                 src={projectInfo.projectImages[2]}
                 alt="instagram"
@@ -62,7 +62,7 @@ export default function Project({ projectInfo, index, inViewClick }: Props) {
                 priority
               />
             </div>
-            <div className="absolute bottom-[10px] right-[20px] -z-10">
+            <div className="h-[calc(95px*0.75)] w-[calc(150px*0.75)] sm:h-[95px] sm:w-[150px]  absolute sm:bottom-[16px] right-[15px] bottom-[14px] sm:right-[20px] -z-10">
               <Image
                 src={projectInfo.projectImages[3]}
                 alt="instagram"
@@ -71,7 +71,7 @@ export default function Project({ projectInfo, index, inViewClick }: Props) {
                 priority
               />
             </div>
-            <div className="absolute bottom-[10px] left-[3px] -z-10">
+            <div className="h-[calc(65px*0.75)] w-[calc(30px*0.75)] sm:h-[65px] sm:w-[30px]  absolute sm:bottom-[16px] bottom-[14px] rounded-sm overflow-hidden left-[1px] sm:left-[3px] -z-10">
               <Image
                 src={projectInfo.projectImages[4]}
                 alt="instagram"
@@ -81,7 +81,7 @@ export default function Project({ projectInfo, index, inViewClick }: Props) {
               />
             </div>
           </div>
-          <p className="mx-auto w-max text-white font-semibold text-2xl py-3">
+          <p className="mx-auto w-max text-white font-semibold text-lg sm:text-2xl py-3">
             Case Study {index + 1} of 4: {projectInfo.projectName}
           </p>
           <div className="max-w-[650px] w-full mx-auto flex items-center justify-between gap-2 pb-1">
@@ -89,12 +89,12 @@ export default function Project({ projectInfo, index, inViewClick }: Props) {
               <a target="_blank">
                 <div className="animate-pulse flex flex-col items-center justify-center pt-4">
                   <button
-                    className="bg-[#344869] p-2 rounded-full"
+                    className="bg-[#344869] p-1 sm:p-2 rounded-full"
                     onMouseEnter={() => setGitHover(true)}
                     onMouseLeave={() => setGitHover(false)}
                   >
                     <svg
-                      className="h-5 w-5"
+                      className="sm:h-5 sm:w-5 h-4 w-4"
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke={gitHover ? '#58a6ff' : '#ffffff'}
@@ -114,7 +114,7 @@ export default function Project({ projectInfo, index, inViewClick }: Props) {
               {projectInfo.builtWith.map((imgSRC, index) => (
                 <div
                   key={index}
-                  className="bg-[#344869] overflow-hidden h-10 w-10 flex items-center justify-center  rounded-full"
+                  className="bg-[#344869] overflow-hidden h-6 w-6 sm:h-10 sm:w-10 flex items-center justify-center  rounded-full"
                 >
                   <Image src={imgSRC} alt="instagram" width={31} height={31} />
                 </div>
@@ -124,12 +124,12 @@ export default function Project({ projectInfo, index, inViewClick }: Props) {
               <a target="_blank">
                 <div className="animate-pulse flex flex-col items-center justify-center pt-4">
                   <button
-                    className="bg-[#344869] p-2 rounded-full"
+                    className="bg-[#344869] p-1 sm:p-2 rounded-full"
                     onMouseEnter={() => setlinkHover(true)}
                     onMouseLeave={() => setlinkHover(false)}
                   >
                     <svg
-                      className="h-5 w-5"
+                      className="sm:h-5 sm:w-5 h-4 w-4"
                       role="img"
                       viewBox="0 0 24 24"
                       fill="none"
@@ -149,7 +149,7 @@ export default function Project({ projectInfo, index, inViewClick }: Props) {
               </a>
             </Link>
           </div>
-          <p className="max-w-[650px] text-sm mx-auto pb-4 text-justify">
+          <p className="max-w-[650px] text-xs sm:text-sm mx-auto pb-4 text-justify">
             {projectInfo.description}
           </p>
         </div>

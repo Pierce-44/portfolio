@@ -31,11 +31,13 @@ export default function ProjectsPage() {
     <Element name="scrollToProjects">
       <div
         ref={ref}
-        className="h-[calc(100vh-56px)] mx-10 min-h-[500px] flex flex-col justify-between items-center"
+        className="h-[calc(100vh-56px)] mx-1 sm:mx-10 min-h-[500px] flex flex-col justify-between items-center"
       >
         <div>
-          <p className="pt-2 tracking-[8px] pr-10 text-[#a3a3a3]">PROJECTS</p>
-          <div className="flex w-[140px] justify-between items-center mt-3">
+          <p className="pt-2 tracking-[8px] sm:pr-10 text-[#a3a3a3]">
+            PROJECTS
+          </p>
+          <div className="flex w-[140px] justify-between items-center mt-1 sm:mt-3">
             <button
               className={`${
                 one ? 'bg-[#1a1f29]' : 'bg-[#344869]'

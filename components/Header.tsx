@@ -9,6 +9,7 @@ import {
 } from '../util/atoms';
 import useCheckHeaderPosition from '../hooks/useCheckHeaderPosition';
 import Link from 'next/link';
+import BurgerMenu from './BurgerMenu';
 
 export default function Header() {
   const [gitHover, setGitHover] = React.useState(false);
@@ -34,8 +35,8 @@ export default function Header() {
         changeBackground ? 'bg-[#242c3a] shadow-lg' : ''
       } sticky top-0 z-50 overflow-hidden`}
     >
-      <div className="py-3 px-8 flex justify-between ">
-        <div className="flex items-center gap-4 pl-10 animate-leftToRight">
+      <div className="py-3 px-3 md:px-8 flex justify-between ">
+        <div className="flex items-center gap-4 md:pl-10 animate-leftToRight">
           <Link href="https://github.com/Pierce-44">
             <a target="_blank">
               <button
@@ -82,7 +83,7 @@ export default function Header() {
               </button>
             </a>
           </Link>
-          <Link href="https://www.linkedin.com/in/pierce-hahn/">
+          <Link href="https://firebasestorage.googleapis.com/v0/b/porfolio-ph.appspot.com/o/CV_PH%20(2).pdf?alt=media&token=a6e7f00e-4f55-49c9-9707-700206d11fd5">
             <a target="_blank">
               <button
                 className="bg-[#344869] p-2 rounded-full"
@@ -109,7 +110,7 @@ export default function Header() {
             </a>
           </Link>
         </div>
-        <div className="flex gap-8 text-xs font-semibold animate-rightToLeft">
+        <div className="hidden sm:flex gap-8 text-xs font-semibold animate-rightToLeft">
           <button
             className="flex items-center  relative z-10 group hover:text-[#7cb9ff]"
             onClick={() => scroller.scrollTo('scrollToAbout', scrollProps)}
@@ -179,6 +180,7 @@ export default function Header() {
             </p>
           </button>
         </div>
+        <BurgerMenu />
       </div>
     </div>
   );

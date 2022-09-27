@@ -17,7 +17,7 @@ export default function ContactPage() {
     <Element name="scrollToContact">
       <div
         ref={ref}
-        className="h-[calc(100vh-56px)] min-h-[500px] flex flex-col items-center"
+        className="overflow-hidden h-[calc(100vh-56px)] min-h-[500px] flex flex-col items-center"
       >
         <p className="pt-10 tracking-[8px] text-[#a3a3a3]">CONTACT</p>
         <div className="my-auto text-center max-w-[550px]">

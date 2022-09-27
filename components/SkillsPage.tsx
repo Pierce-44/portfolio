@@ -19,7 +19,7 @@ export default function SkillsPage() {
     <Element name="scrollToSkills">
       <div
         ref={ref}
-        className="h-[calc(100vh-56px)] min-h-[500px] flex flex-col items-center"
+        className="h-[calc(100vh-56px)] min-h-[500px] flex flex-col items-center overflow-hidden"
       >
         <p className="pt-10 tracking-[8px] text-[#a3a3a3]">SKILLS</p>
         <div className="grid grid-cols-4 gap-4 my-auto">
@@ -30,7 +30,7 @@ export default function SkillsPage() {
                 !inView && index < 8 ? 'opacity-0 translate-x-[100px]' : ''
               } ${
                 index > 7 && !inView ? 'opacity-0 -translate-x-[100px]' : ''
-              } transition duration-[500ms] h-20 w-20 flex items-center justify-center rounded-full overflow-hidden bg-[#344869] ease-[cubic-bezier(1,-0.01,.72,.71)]`}
+              } transition duration-[500ms] h-14 w-14 sm:h-20 sm:w-20 flex items-center justify-center rounded-full overflow-hidden bg-[#344869] ease-[cubic-bezier(1,-0.01,.72,.71)]`}
             >
               <Image src={src} alt="skill" width={55} height={55} priority />
             </div>
