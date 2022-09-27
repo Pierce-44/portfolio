@@ -37,7 +37,7 @@ export default function ProjectsPage() {
           <p className="pt-2 tracking-[8px] sm:pr-10 text-[#a3a3a3]">
             PROJECTS
           </p>
-          <div className="flex w-[140px] justify-between items-center mt-1 sm:mt-3">
+          <div className="flex w-[140px] justify-between items-center mt-3">
             <button
               className={`${
                 one ? 'bg-[#1a1f29]' : 'bg-[#344869]'
