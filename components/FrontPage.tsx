@@ -22,7 +22,10 @@ export default function FrontPage() {
 
   return (
     <Element name="scrollToHome">
-      <div ref={ref} className="h-[calc(100vh-56px)] min-h-[500px] w-full">
+      <div
+        ref={ref}
+        className="overflow-hidden h-[calc(100vh-56px)] min-h-[500px] w-full"
+      >
         <div className="h-full w-full flex flex-col items-center justify-center relative">
           <div className="animate-ping-second absolute h-[250px] w-[250px] sm:h-[400px] sm:w-[400px] border rounded-full border-[#8585852c] top-[calc(1/2-200px] left-[calc(1/2-200px)] "></div>
           <div className="relative mt-[50px]">
