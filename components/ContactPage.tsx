@@ -39,6 +39,10 @@ export default function ContactPage() {
             className={`${
               contactInView ? '' : 'opacity-0 translate-x-[100px]'
             } w-32 h-10 relative mt-2 transition duration-[500ms] ease-[cubic-bezier(1,-0.01,.72,.71)]`}
+            onClick={(e) => {
+              window.location.href = 'mailto:piercehahn.coding@gmail.com';
+              e.preventDefault();
+            }}
           >
             <div className="blur-sm absolute bg-gradient-to-r from-[#58a6ff] to-[#c258ff]  top-0 left-0 h-full w-full rounded-md"></div>
             <div className="hover:text-[#7cb9ff] bg-[#202733] hover:bg-[#1a1f29] flex items-center justify-center h-full w-full rounded-md absolute top-0 left-0">

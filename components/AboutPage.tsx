@@ -41,19 +41,17 @@ export default function AboutPage() {
               A little about me
             </p>
             <p className="sm:text-base text-xs text-justify">
-              I am a passionate self-taught fort-end developer experienced in
-              Javascript-based programming with a strong focus towards React
-              based projects. I am working towards becoming a full stack web
-              developer. Additionally, I have a technical background in
-              Mechanical (BSc) and Automotive engineering (MSc). Currently I am
-              studying and learning Next.js, TypeScript and MongoDB through the
-              The Odin Project Full-Stack Javasctipt bootcamp. A few things
-              about me, I can speak Portuguese at a higher intermediate level,
-              and I am working towards becoming fully fluent in the language.
-              Additionaly, in my free time I enjoy playing and learning about
-              chess. All my projects are on GitHub, feel free to explore, have a
-              look around, and get in touch. Below is a list of the current
-              languages and tools that I use:
+              I am a passionate fort-end developer experienced in JavaScript and
+              TypeScript-based programming with a strong focus towards
+              React/Next.js based projects. My most recent project was
+              developing an Instagram TypeScript based clone app that utilises
+              Next.js for Static page generation, client-side rendering, dynamic
+              page routes, Jotai for React state management, Firebase for the
+              database/backend features as well as user authentication.
+              Additionally, I have a unique technical background in Mechanical
+              (BSc) and Automotive engineering (MSc). All my projects are on
+              GitHub, feel free to explore, have a look around, and get in
+              touch.
             </p>
           </div>
         </div>

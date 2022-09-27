@@ -56,7 +56,7 @@ export default function Project({ projectInfo, index, inViewClick }: Props) {
             priority
           />
         </div>
-        <div className="h-[calc(82px*0.75)] w-[calc(60px*0.75)] sm:h-[82px] sm:w-[60px]  absolute sm:bottom-[26px] bottom-[25px] left-[23px] sm:left-[30px] -z-10">
+        <div className="h-[calc(82px*0.75)] w-[calc(60px*0.75)] sm:h-[82px] sm:w-[60px]  absolute sm:bottom-[27px] bottom-[25px] left-[23px] sm:left-[31px] -z-10">
           <Image
             src={projectInfo.projectImages[2]}
             alt="instagram"
