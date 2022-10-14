@@ -83,7 +83,7 @@ export default function Header() {
               </button>
             </a>
           </Link>
-          <Link href="https://firebasestorage.googleapis.com/v0/b/porfolio-ph.appspot.com/o/CV_PH%20(2).pdf?alt=media&token=a6e7f00e-4f55-49c9-9707-700206d11fd5">
+          <Link href="https://firebasestorage.googleapis.com/v0/b/porfolio-ph.appspot.com/o/CV_PH%20(2).pdf?alt=media&token=b4e72237-9ee5-44f1-b7fd-7687955b501e">
             <a target="_blank">
               <button
                 className="bg-[#344869] p-2 rounded-full"

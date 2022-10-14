@@ -8,6 +8,7 @@ export const skillsImages = [
   'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
   '/images/jotai.png',
   'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg',
+  'https://raw.githubusercontent.com/nextauthjs/next-auth/main/docs/static/img/logo/logo.png',
   'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg',
   'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg',
   'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
