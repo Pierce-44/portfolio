@@ -32,7 +32,13 @@ export default function SkillsPage() {
                 index > 7 && !inView ? 'opacity-0 -translate-x-[100px]' : ''
               } transition duration-[500ms] h-14 w-14 sm:h-20 sm:w-20 flex items-center justify-center rounded-full overflow-hidden bg-[#344869] ease-[cubic-bezier(1,-0.01,.72,.71)]`}
             >
-              <Image src={src} alt="skill" width={55} height={55} priority />
+              <Image
+                src={src}
+                alt="skill"
+                width={index === 9 ? 53 : 55}
+                height={55}
+                priority
+              />
             </div>
           ))}
         </div>

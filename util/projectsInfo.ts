@@ -24,9 +24,9 @@ const projectOne = {
 const projectTwo = {
   projectName: 'Netflix Clone',
   gitHubLink: 'https://github.com/Pierce-44/netflix-clone',
-  liveLink: 'https://netflix-clone-model.web.app/',
+  liveLink: 'https://netphlix.vercel.app/',
   description:
-    'A Netflix clone app that was built with React, Javascript, CSS, and HTML, that utilises FireBase for authentication, and TMDB api to gather movies/series data. Carousel that can infinitely loop through movies without the need to return. When hovering over a movie a pop-up autoplays the YouTube movie trailer as well as displays information related to the movie. Playing a movie opens a separate full screen page that plays the movie (YouTube trailer)',
+    'A Netflix Clone app written in Typescript that utilises Next.js as a framework, allowing for static HTML to be generated server-side on build time, resulting in better performance and SEO. This app utilises NextAuth to authorise users server side through getServerSideProps, additionally users can login to the app through their registered Google account. The TMDb api was used to gather movie/series data (most popular, top rated, new series, etc). Users can save selected movies to their "My List" by utilising Firebase (BaaS) as the database. Additionally, the TailwindCSS framework was used to help with CSS management and to reduce the CSS bundle size by removing all unused CSS when building for production.',
   projectImages: [
     '/images/monitors.png',
     '/images/netflixMonitor.gif',
@@ -35,10 +35,12 @@ const projectTwo = {
     '/images/netflixMobile.png',
   ],
   builtWith: [
-    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg',
     'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg',
+    'https://raw.githubusercontent.com/nextauthjs/next-auth/main/docs/static/img/logo/logo.png',
     'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg',
-    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
   ],
 };
 
