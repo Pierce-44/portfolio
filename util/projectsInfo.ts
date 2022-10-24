@@ -24,7 +24,7 @@ const projectOne = {
 const projectTwo = {
   projectName: 'Netflix Clone',
   gitHubLink: 'https://github.com/Pierce-44/netflix-clone',
-  liveLink: 'https://netphlix.vercel.app/',
+  liveLink: 'https://project-net.vercel.app/',
   description:
     'A Netflix Clone app written in Typescript that utilises Next.js as a framework, allowing for static HTML to be generated server-side on build time, resulting in better performance and SEO. This app utilises NextAuth to authorise users server side through getServerSideProps, additionally users can login to the app through their registered Google account. The TMDb api was used to gather movie/series data (most popular, top rated, new series, etc). Users can save selected movies to their "My List" by utilising Firebase (BaaS) as the database. Additionally, the TailwindCSS framework was used to help with CSS management and to reduce the CSS bundle size by removing all unused CSS when building for production.',
   projectImages: [
